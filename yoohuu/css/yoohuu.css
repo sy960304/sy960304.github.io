@@ -1,0 +1,266 @@
+@charset "utf-8";
+@import url('fonts.css');
+@import url('reset.css');
+
+html {font-size: 0.625rem;}
+body {
+    font: 1.5rem/1 'Noto Sans KR', sans-serif; 
+    color: #585858;    
+}
+
+/*common*/
+section {padding: 8em 0; /*padding: 120px 0*/ text-align: center;}
+.inner {position: relative; margin: 0 auto;}
+h2 {text-align: center; color: #111; font-weight: 500;}
+h2 > span {
+    display: inline-block; 
+    font-size: 2.6rem; 
+    padding-bottom: 0.38em;
+    border-bottom: 2px solid #111;
+}
+img {max-width: 100%;}
+
+.imgArea {margin-top: 5.3em; /*margin=top: 80px;*/}
+section ul {text-align: left;}
+.text {margin-top: 3em;font-size: 2.2rem; font-weight: 500; line-height: 2; color: #111;}
+
+.title {font-size: 2.2rem; font-weight: 500; color: #111; margin-bottom: 1em;}
+.text1, .text2 {
+    padding-left: 30px; 
+    background: url(../img/pin.png) no-repeat left center/25px;
+    line-height: 25px;
+    margin-bottom: 0.6em;
+}
+.text2 {background-image: url(../img/pen.png)}
+
+/*+++++++++++ button 공통 +++++++++++*/
+.btn {display: inline-block; padding: 0.8em 1.6em; /*padding: 10px 25px*/ border-radius: 50px; font-size: 2rem; font-weight: 500;}
+.btnMore {border: 1px solid #fff; color: #fff;}
+.btnDark {background: #222; color: #fff;}
+.btnWhite {background: #fff; color: #222;}
+.btnGreen {
+    background: #50b56e url(../img/plus_black.png) no-repeat 10px 8px /34px;
+    color: #111; 
+    padding-left: 50px;
+}
+
+
+#wrap {width: 100%; overflow: hidden;}
+
+/*header*/
+header {
+    overflow: hidden;
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 100%; 
+    height: 100vh;
+    padding: 1.3em 2em; /*padding: 20px 30px*/
+    z-index: 10;
+    box-sizing: border-box;
+}
+header .logo {float: left;}
+header .logo a {display: block; width: 26px}
+header .btnMenu {
+    float: right;
+    width: 32px;
+    height: 32px;
+}
+
+/*nav*/
+.navArea {
+    position: absolute;
+    top: 0; right: -100%;
+    width: 50%;
+    height: 100vh;
+    background: #fff;
+    padding: 2.6em;
+    box-sizing: border-box;
+    /*display: none;*/
+}
+.navArea ul li {margin-bottom: 4em; /*margin-bottom: 60px;*/}
+.navArea ul li strong {
+    display: block; 
+    font-size: 2rem;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 0.8em; 
+}
+.navArea ul li p {font-size: 1.6rem;}
+.navArea .btnClose {
+    position: absolute;
+    top: 20px; right: 20px;
+    width: 30px; height: 30px;
+    z-index: 15
+}
+.navArea .navBottom {
+    position: absolute; 
+    bottom: 0; left: 0;
+    width: 100%;
+}
+.navArea .navBottom .contact {float: left; margin-left: 30px;}
+.navArea .navBottom .sns {float: right; margin-right: 30px;}
+.navArea .navBottom p {line-height: 2; color: #898989;}
+.navArea .navBottom a {display: block; margin-bottom: 5px;}
+
+/*mainImage*/
+#mainImage {    
+    position: relative; 
+    height: calc(100vh - 70px);
+    background: url(../img/home04-desk.png) no-repeat center/cover;
+}
+#mainImage .mainTitle {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#mainImage .mainTitle .title {
+    margin-bottom: 1.25em;
+    font-size: 2.8rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+
+/*membership*/
+#membership .inner .text + .text {margin-top: 1.5em;}
+#membership .btnDark {margin-top: 3em;}
+#membership .inner .mText {display: none;}
+
+/*Story*/
+#story {background: #8eccff;}
+#story .textGroup {margin-top: 2em; text-align: left;}
+#story .storyList {margin-top: 5em; margin-left: -4%; text-align: left;}
+#story .storyList li {
+    float: left; 
+    width: calc(100%/2 - 4%); /*전체크기/콘텐츠개수 - 여백값*/
+    margin-left: 4%;
+    margin-bottom: 4em;
+}
+
+/*houseInfo*/
+#houseInfo .houseList {margin-top: 5em; margin-left: -4%;}
+#houseInfo .houseList li {
+    float: left;
+    width: calc(100%/2 - 4%);
+    margin-left: 4%;
+    margin-bottom: 4em;
+    
+}
+#houseInfo .houseList li > a {display: block; margin-bottom: 1.4em;}
+#houseInfo .houseList strong {
+    float: left;
+    display: block;
+    width: 60px; height: 60px;
+    background: url(../img/move_in.png) no-repeat center/cover;
+    font-size: 0; 
+    line-height: 0;
+    text-indent: -9999px;
+}
+#houseInfo .houseList .textSet {
+    float: left;
+    width: calc(100% - 6em);
+    /*li의 너비를 100%로 보고 li의 전체 넓이 - {(이미지크기 (60px) + 마진왼쪽여백값(30px)}을 계산해서 6em을 빼줌*/ 
+    margin-left: 2em;
+}
+
+
+/*inquiry*/
+#inquiry {background: #f8f8f8;}
+#inquiry .inner {width: 760px;}
+#inquiry .text {margin-top: 1.6em;}
+#inquiry .spaceInquiry {margin-top: 3.2em;}
+#inquiry .spaceInquiry li {
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    border: 1px solid #dedede;
+    margin-bottom: 2.2em;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+#inquiry input[type="text"],
+#inquiry input[type="email"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 20px;
+}
+#inquiry .inquiryGroup li:nth-child(3) {height: 240px;}
+#inquiry .inquiryGroup li:nth-child(4),#inquiry .inquiryGroup li:nth-child(5) {
+    border: none;
+    background: none;
+    height: auto; /*li요소안에 있는 콘텐츠의 크기대로 인식*/
+    text-align: center;
+    font-size: 1.6rem;
+    color: #888888;
+}
+#inquiry input[type="checkbox"] {margin-right: 10px;}
+#inquiry textarea {
+    width: 100%;
+    height: 240px;
+    padding-left: 20px;
+    overflow: auto; /*정해진 영역보다 입력한 콘텐츠가 더 많으면 자동으로 세로 스크롤바가 생김*/
+    border: none;
+}
+#inquiry input:focus, #inquiry textarea:focus {outline: none;}
+
+/*footer*/
+footer .inner {padding: 3em;}
+footer .f-top {margin-bottom: 4em;}
+footer .f-top ul li a {
+    display: block; 
+    font-size: 1.7rem; 
+    color: #111; 
+    line-height: 2;
+}
+footer .left {float: left; width: 38%;}
+footer .right {float: right; width: 38%;}
+footer .right .newsletter input[type="email"] {
+    display: block;
+    width: 300px;
+    height: 36px;
+    border: none;
+    border-bottom: 2px solid #111;    
+}
+footer .right .newsletter > a {
+    margin-top: 1.5em;
+    display: block;
+    width: 200px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../img/arrow.png) no-repeat right top/contain;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #222;
+}
+footer .text {margin: 0 0 2em;}
+footer .f-bottom .left p {margin-bottom: 1em}
+footer .f-bottom .left a {font-size: 1.4rem; color: #898989}
+footer .f-bottom .right a {
+    font-size: 2.4rem; 
+    margin-right: 3em;
+    color: #111;
+}
+
+
+
+
+
+
+
+
+/*++++++ 화면이 1025px이상 +++++++*/
+@media screen and (min-width: 1025px) {
+    .inner {width: 1025px;}
+}
+
+
+
+
+
+
+
+
+
+

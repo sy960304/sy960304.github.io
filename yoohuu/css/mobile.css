@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+body {font-size: 1.4rem;}
+
+/*common*/
+.inner {width: 92%;}
+section {padding: 3.5em 0; /*padding: 40px 0*/}
+h2 > span {font-size: 2rem;}
+
+.imgArea {margin-top: 2.1em; /*margin=top: 30px;*/}
+.text {margin-top: 2em; font-size: 1.8rem; line-height: 1.8;}
+
+.title {font-size: 1.7rem; margin-bottom: 1em;}
+.text1, .text2 {margin-bottom: 0.4em; color: #222;}
+
+/*header*/
+header {padding: 1.3em 2em; /*padding: 20px 30px*/}
+header .logo a {width: 18px}
+header .btnMenu {width: 26px; height: 26px;}
+
+/*nav*/
+.navArea {width: 100%;}
+.navArea ul li {margin-bottom: 2em; /*margin-bottom: 60px;*/}
+.navArea ul li strong {font-size: 1.8rem; margin-bottom: 1.2em}
+.navArea ul li p {font-size: 1.5rem; letter-spacing: -1px;}
+.navArea .btnClose {width: 26px; height: 26px;}
+
+/*mainImaag*/
+#mainImage .mainTitle {width: 100%;}
+#mainImage .mainTitle .title {font-size: 2rem;}
+
+/*membership*/
+#membership .inner .text {font-size: 2.2rem; display: none;}
+#membership .inner .text + .text {margin-top: 1.5em;}
+#membership .inner .mText {display: block;}
+
+/*Story*/
+#story .storyList {margin-top: 5em; margin-left: 0; text-align: left;}
+#story .storyList li {
+    float: none; 
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 3em;
+}
+#story .storyList .title {line-height: 1.5; letter-spacing: -1px;}
+
+/*houseInfo*/
+#houseInfo .houseList {margin-top: 5em; margin-left: 0;}
+#houseInfo .houseList li {
+    float: none;
+    width: 100%;
+    margin-left: 0%;    
+    margin-bottom: 3em;
+}
+#houseInfo .houseList .title {letter-spacing: -1px; margin-bottom: 1em;}
+#houseInfo .houseList .textSet {margin-left: 1.2em;}
+
+/*inquiry*/
+#inquiry .inner {width: 85%;}
+#inquiry .text {margin-top: 1.6em;}
+#inquiry .spaceInquiry {margin-top: 3.2em;}
+#inquiry .spaceInquiry li {
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 1em;
+}
+#inquiry input[type="text"],
+#inquiry input[type="email"] {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+#inquiry .inquiryGroup li:nth-child(3) {height: 160px;}
+#inquiry textarea {height: 100%; box-sizing: border-box;}
+
+/*footer*/
+footer .inner {padding: 1.7em 0;}
+footer .f-top {margin-bottom: 3em;}
+footer .f-top ul li a {font-size: 1.6rem;}
+footer .f-top .left {margin-bottom: 20px;}
+footer .left, footer .right {float: none; width: 100%}
+
+footer .right .newsletter input[type="email"] {
+    width: 100%;
+}
+footer .right .newsletter > a {
+    width: 180px;
+    font-size: 1.6rem;
+}
+footer .text {margin: 0 0 2em;}
+footer .f-bottom {text-align: center;}
+footer .f-bottom .left {margin-bottom: 20px;}
+footer .f-bottom .left p {margin-bottom: 1em}
+footer .f-bottom .left a {font-size: 1.4rem; color: #898989}
+footer .f-bottom .right a {
+    font-size: 2rem; 
+    margin: 0 1em;
+}
+
+
+
+
+
+
+
+
